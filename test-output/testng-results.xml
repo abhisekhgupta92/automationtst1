@@ -2,27 +2,27 @@
 <testng-results ignored="0" total="2" passed="0" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-15T01:13:59 IST" name="Default suite" finished-at="2024-01-15T01:14:09 IST" duration-ms="9819">
+  <suite started-at="2024-02-23T22:30:29 IST" name="Default suite" finished-at="2024-02-23T22:30:42 IST" duration-ms="12707">
     <groups>
     </groups>
-    <test started-at="2024-01-15T01:13:59 IST" name="Default test" finished-at="2024-01-15T01:14:09 IST" duration-ms="9819">
+    <test started-at="2024-02-23T22:30:29 IST" name="Default test" finished-at="2024-02-23T22:30:42 IST" duration-ms="12707">
       <class name="Testing.FunctionalTest">
-        <test-method is-config="true" signature="SetReport()[pri:0, instance:Testing.FunctionalTest@cb0755b]" started-at="2024-01-15T01:13:59 IST" name="SetReport" finished-at="2024-01-15T01:14:00 IST" duration-ms="686" status="PASS">
+        <test-method is-config="true" signature="SetReport()[pri:0, instance:Testing.FunctionalTest@53fb3dab]" started-at="2024-02-23T22:30:29 IST" name="SetReport" finished-at="2024-02-23T22:30:30 IST" duration-ms="701" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetReport -->
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:Testing.FunctionalTest@cb0755b]" started-at="2024-01-15T01:14:00 IST" name="OpenBrowser" finished-at="2024-01-15T01:14:09 IST" duration-ms="8843" status="PASS">
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:Testing.FunctionalTest@53fb3dab]" started-at="2024-02-23T22:30:30 IST" name="OpenBrowser" finished-at="2024-02-23T22:30:42 IST" duration-ms="11666" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenBrowser -->
-        <test-method signature="AmazonTitleTest()[pri:0, instance:Testing.FunctionalTest@cb0755b]" started-at="2024-01-15T01:14:09 IST" name="AmazonTitleTest" finished-at="2024-01-15T01:14:09 IST" duration-ms="28" status="FAIL">
+        <test-method signature="AmazonTitleTest()[pri:0, instance:Testing.FunctionalTest@53fb3dab]" started-at="2024-02-23T22:30:42 IST" name="AmazonTitleTest" finished-at="2024-02-23T22:30:42 IST" duration-ms="33" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.getTitle()" because "this.driver" is null]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getTitle()" because "this.driver" is null
-at Testing.FunctionalTest.AmazonTitleTest(FunctionalTest.java:82)
+at Testing.FunctionalTest.AmazonTitleTest(FunctionalTest.java:83)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -57,11 +57,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AmazonTitleTest -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:Testing.FunctionalTest@cb0755b]" started-at="2024-01-15T01:14:09 IST" name="teardown" finished-at="2024-01-15T01:14:09 IST" duration-ms="21" status="FAIL">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:Testing.FunctionalTest@53fb3dab]" started-at="2024-02-23T22:30:42 IST" name="teardown" finished-at="2024-02-23T22:30:42 IST" duration-ms="29" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=AmazonTitleTest status=FAILURE method=FunctionalTest.AmazonTitleTest()[pri:0, instance:Testing.FunctionalTest@cb0755b] output={null}]]]>
+                <![CDATA[[TestResult name=AmazonTitleTest status=FAILURE method=FunctionalTest.AmazonTitleTest()[pri:0, instance:Testing.FunctionalTest@53fb3dab] output={null}]]]>
               </value>
             </param>
           </params>
@@ -71,7 +71,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "this.driver" is null
-at Testing.FunctionalTest.teardown(FunctionalTest.java:134)
+at Testing.FunctionalTest.teardown(FunctionalTest.java:137)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -111,18 +111,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:Testing.FunctionalTest@cb0755b]" started-at="2024-01-15T01:14:09 IST" name="OpenBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1705261449658" status="SKIP">
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:Testing.FunctionalTest@53fb3dab]" started-at="2024-02-23T22:30:42 IST" name="OpenBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1708707642223" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenBrowser -->
-        <test-method signature="selectProduct()[pri:0, instance:Testing.FunctionalTest@cb0755b]" started-at="2024-01-15T01:14:09 IST" name="selectProduct" finished-at="2024-01-15T01:14:09 IST" duration-ms="0" status="SKIP">
+        <test-method signature="selectProduct()[pri:0, instance:Testing.FunctionalTest@53fb3dab]" started-at="2024-02-23T22:30:42 IST" name="selectProduct" finished-at="2024-02-23T22:30:42 IST" duration-ms="0" status="SKIP">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "this.driver" is null]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "this.driver" is null
-at Testing.FunctionalTest.teardown(FunctionalTest.java:134)
+at Testing.FunctionalTest.teardown(FunctionalTest.java:137)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -162,11 +162,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectProduct -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:Testing.FunctionalTest@cb0755b]" started-at="2024-01-15T01:14:09 IST" name="teardown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1705261449690" status="SKIP">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:Testing.FunctionalTest@53fb3dab]" started-at="2024-02-23T22:30:42 IST" name="teardown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1708707642311" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="endreport()[pri:0, instance:Testing.FunctionalTest@cb0755b]" started-at="2024-01-15T01:14:09 IST" name="endreport" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1705261449754" status="SKIP">
+        <test-method is-config="true" signature="endreport()[pri:0, instance:Testing.FunctionalTest@53fb3dab]" started-at="2024-02-23T22:30:42 IST" name="endreport" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1708707642329" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endreport -->
