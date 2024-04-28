@@ -80,11 +80,12 @@ public class FunctionalTest {
 		public void AmazonTitleTest(){
 			
 			logger = extent.startTest("AmazonTitleTest");
+			
 			String Title = driver.getTitle();
 			
 			System.out.print("Title");
 			
-			Assert.assertEquals(Title, "Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in");
+			Assert.assertEquals(Title, "Amazon.com. Spend less. Smile more.");
 			
 			
 			
@@ -93,7 +94,8 @@ public class FunctionalTest {
 		@Test
 		public void selectProduct(){
 			logger = extent.startTest("AmazonSelectProductTest");
-			WebElement category = driver.findElement(By.xpath("//select[@aria-describedby='searchDropdownDescription']"));
+			//WebElement category = driver.findElement(By.xpath("//select[@aria-describedby='searchDropdownDescription']"));
+			WebElement category = driver.findElement(By.id("searchDropdownBox"));
 			//category.click();
 			//driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));

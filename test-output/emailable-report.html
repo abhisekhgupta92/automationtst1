@@ -9,12 +9,12 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">16,699</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">15,456</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">Testing.FunctionalTest</td><td><a href="#m0">teardown</a></td><td rowspan="1">1714151431023</td><td rowspan="1">18</td></tr><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Testing.FunctionalTest</td><td><a href="#m1">AmazonTitleTest</a></td><td rowspan="1">1714151430991</td><td rowspan="1">22</td></tr><tr><th colspan="4">Default test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="3">Testing.FunctionalTest</td><td><a href="#m2">OpenBrowser</a></td><td rowspan="1">1714151431054</td><td rowspan="1">-1714151431054</td></tr><tr class="skippedeven"><td><a href="#m3">endreport</a></td><td rowspan="1">1714151431144</td><td rowspan="1">-1714151431144</td></tr><tr class="skippedeven"><td><a href="#m4">teardown</a></td><td rowspan="1">1714151431079</td><td rowspan="1">-1714151431079</td></tr><tr><th colspan="4">Default test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">Testing.FunctionalTest</td><td><a href="#m5">selectProduct</a></td><td rowspan="1">1714151431064</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">Testing.FunctionalTest</td><td><a href="#m0">teardown</a></td><td rowspan="1">1714154601644</td><td rowspan="1">41</td></tr><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Testing.FunctionalTest</td><td><a href="#m1">AmazonTitleTest</a></td><td rowspan="1">1714154601595</td><td rowspan="1">27</td></tr><tr><th colspan="4">Default test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="3">Testing.FunctionalTest</td><td><a href="#m2">OpenBrowser</a></td><td rowspan="1">1714154601724</td><td rowspan="1">-1714154601724</td></tr><tr class="skippedeven"><td><a href="#m3">endreport</a></td><td rowspan="1">1714154601958</td><td rowspan="1">-1714154601958</td></tr><tr class="skippedeven"><td><a href="#m4">teardown</a></td><td rowspan="1">1714154601934</td><td rowspan="1">-1714154601934</td></tr><tr><th colspan="4">Default test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">Testing.FunctionalTest</td><td><a href="#m5">selectProduct</a></td><td rowspan="1">1714154601733</td><td rowspan="1">0</td></tr></tbody>
 </table>
 <h2>Default test</h2><h3 id="m0">Testing.FunctionalTest#teardown</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[TestResult name=AmazonTitleTest status=FAILURE method=FunctionalTest.AmazonTitleTest()[pri:0, instance:Testing.FunctionalTest@cb0755b] output={null}]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.quit()&quot; because &quot;this.driver&quot; is null
-	at Testing.FunctionalTest.teardown(FunctionalTest.java:137)
+	at Testing.FunctionalTest.teardown(FunctionalTest.java:139)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -50,7 +50,7 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m1">Testing.FunctionalTest#AmazonTitleTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getTitle()&quot; because &quot;this.driver&quot; is null
-	at Testing.FunctionalTest.AmazonTitleTest(FunctionalTest.java:83)
+	at Testing.FunctionalTest.AmazonTitleTest(FunctionalTest.java:84)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -84,7 +84,7 @@
 <h3 id="m3">Testing.FunctionalTest#endreport</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m4">Testing.FunctionalTest#teardown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m5">Testing.FunctionalTest#selectProduct</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.quit()&quot; because &quot;this.driver&quot; is null
-	at Testing.FunctionalTest.teardown(FunctionalTest.java:137)
+	at Testing.FunctionalTest.teardown(FunctionalTest.java:139)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
