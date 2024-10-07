@@ -16,7 +16,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.utlity.BaseSetup;
+import com.utility.BaseSetup;
 
 import AutomationTest.PageObject.TestPOM;
 

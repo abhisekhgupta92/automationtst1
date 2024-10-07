@@ -5,8 +5,8 @@ import java.util.Map;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.utlity.DataReader;
-import com.utlity.BaseSetup;;
+import com.utility.BaseSetup;
+import com.utility.DataReader;;
 
 public class LTMSTest extends BaseSetup {
 	
@@ -88,7 +88,7 @@ public class LTMSTest extends BaseSetup {
 		
     @DataProvider(name = "getData")
     public Object[][] getExceData() throws Exception{
-      return com.utlity.DataReader.getExceData(TestCaseName); 
+      return com.utility.DataReader.getExceData(TestCaseName); 
       	
 	}
 

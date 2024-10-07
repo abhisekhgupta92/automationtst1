@@ -2,8 +2,8 @@ package AutomationTest.PageObject;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import com.utlity.*;
-import com.utlity.BaseSetup;
+
+import com.utility.*;
 
 public class TestPOM extends BaseSetup {
 	

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-10-08T00:32:00 IST" name="API Regression" finished-at="2024-10-08T00:32:09 IST" duration-ms="8772">
+    <groups>
+    </groups>
+    <test started-at="2024-10-08T00:32:00 IST" name="APIPostCall" finished-at="2024-10-08T00:32:09 IST" duration-ms="8772">
+      <class name="Testing.CreateRec_Post">
+        <test-method signature="PostData01()[pri:0, instance:Testing.CreateRec_Post@6dbb137d]" started-at="2024-10-08T00:32:00 IST" name="PostData01" finished-at="2024-10-08T00:32:09 IST" duration-ms="8700" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PostData01 -->
+      </class> <!-- Testing.CreateRec_Post -->
+    </test> <!-- APIPostCall -->
+  </suite> <!-- API Regression -->
+</testng-results>

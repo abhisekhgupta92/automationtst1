@@ -26,7 +26,7 @@
         <configuration>
         <testFailureIgnore>true</testFailureIgnore>
           <suiteXmlFiles>
-            <suiteXmlFile>testng_regression_${module}.xml</suiteXmlFile>             
+            <suiteXmlFile>Testng_1.xml</suiteXmlFile>             
           </suiteXmlFiles>
         </configuration>
       </plugin>
@@ -46,7 +46,7 @@
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
     <version>7.4.0</version>
-    <scope>test</scope>
+    <scope>compile</scope>
 </dependency>
 
  
@@ -56,6 +56,14 @@
 	    <artifactId>selenium-java</artifactId>
 	    <version>4.11.0</version>
 	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/org.freemarker/freemarker -->
+<dependency>
+    <groupId>org.freemarker</groupId>
+    <artifactId>freemarker</artifactId>
+    <version>2.3.28</version>
+</dependency>
+	
 
 	<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver -->
 	<dependency>
@@ -65,11 +73,9 @@
 	</dependency>
 
 
-	<dependency>
-	    <groupId>com.relevantcodes</groupId>
-	    <artifactId>extentreports</artifactId>
-	    <version>2.41.2</version>
-	</dependency>	
+<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+
+	
 	<dependency>
 	    <groupId>com.fasterxml.jackson.core</groupId>
 	    <artifactId>jackson-databind</artifactId>
@@ -85,6 +91,11 @@
 	    <groupId>commons-io</groupId>
 	    <artifactId>commons-io</artifactId>
 	    <version>2.12.0</version>
+	</dependency>
+		<dependency>
+	    <groupId>com.relevantcodes</groupId>
+	    <artifactId>extentreports</artifactId>
+	    <version>2.41.2</version>
 	</dependency>
 		
 	<dependency>
@@ -114,9 +125,11 @@
 	    <version>2.7</version>
 	</dependency>
 	<dependency>
-		<groupId>com.ltms.operations</groupId>
-		<artifactId>LTMS_Operations_Automation</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
-	</dependency>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok</artifactId>
+        <version>1.18.24</version>
+        <scope>provided</scope>
+    </dependency>
+
   </dependencies>
 </project>

@@ -19,23 +19,32 @@ import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+//import com.ltms.utlity.BaseSetUp;
+
+
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
-import com.utlity.BaseSetup;
+import com.utility.BaseSetup;
+import com.utility.ExcelReader;
+import com.utility.GenericFunctions;
 
-public class FunctionalTest {
+
+public class FunctionalTest extends BaseSetup {
 	
-	public WebDriver driver;
-	public ExtentReports extent;
-	public ExtentTest logger;
+    //WebDriver driver;
+	public static ExtentReports extent;
+	public static ExtentTest logger;
 
 	//XPATH
 	public String Search_Button= "//div[@class='nav-search-submit nav-sprite']";
+	public String SelectdropdownValue= "//*[(@id='searchDropdownBox')]";
+	public String HeaderList = "//a[@href=('/deals?ref_=nav_cs_gb')]";
 
 
 	    @BeforeTest
@@ -67,52 +76,63 @@ public class FunctionalTest {
 			return destination;
 		}
 		
-		@SuppressWarnings("deprecation")
-		@BeforeMethod
+		
+		@BeforeClass
 		public void OpenBrowser() throws Exception{
 		
+			
 			BaseSetup.LaunchBrowser();
 		
 		}
 		
-		@Test
+		@Test(description="Verify Title")
 		
 		public void AmazonTitleTest(){
 			
 			logger = extent.startTest("AmazonTitleTest");
+		
 			
 			String Title = driver.getTitle();
 			
 			System.out.print("Title");
 			
-			Assert.assertEquals(Title, "Amazon.com. Spend less. Smile more.");
+			Assert.assertEquals(Title, "Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in");
 			
 			
 			
 		}
 		
 		@Test
-		public void selectProduct(){
+		public void selectProduct() throws Exception{
 			logger = extent.startTest("AmazonSelectProductTest");
-			//WebElement category = driver.findElement(By.xpath("//select[@aria-describedby='searchDropdownDescription']"));
-			WebElement category = driver.findElement(By.id("searchDropdownBox"));
-			//category.click();
+			//driver.navigate().refresh();
+			
+			
 			//driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+			GenericFunctions.selectByVisibleText(SelectdropdownValue, "Electronics");
+			
+			GenericFunctions.WaitForElementPresent(driver, HeaderList, Duration.ofSeconds(20));
+			
+			
+			//driver.findElement(By.xpath("*//span[contains(@class,'toaster-button-dismiss')]")).click();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-			Select select = new Select(category);
-			//select.selectByValue("Electronics");
-			select.selectByVisibleText("Electronics");
-			//driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+			
+			driver.findElement(By.id("twotabsearchtextbox")).sendKeys("Mobile Phones");
+			
+			Thread.sleep(3000);
+			
+			GenericFunctions.clickOn(Search_Button);
+			
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-			driver.findElement(By.xpath(Search_Button)).click();
+			
+			WebElement category1 = driver.findElement(By.partialLinkText(ExcelReader.getValue("Product")));
+			System.out.println(category1.getText());
 			
 			JavascriptExecutor js = (JavascriptExecutor)driver;
-			WebElement category1 = driver.findElement(By.xpath("//div/h2[text()='New  & trending: Laptops']"));
-		    js.executeScript("arguments[0].scrollIntoView(true);", category1);
-		    System.out.println(category1.getText());
-		    try{Thread.sleep(3000);}
-		    catch(InterruptedException e)
-		    {System.out.println(e);}    
+			js.executeScript("arguments[0].scrollIntoView(true);", category1);
+			category1.click();
+		    Thread.sleep(3000);
 		        
 		  }  
 		
@@ -136,10 +156,10 @@ public class FunctionalTest {
 			}
 			
 			extent.endTest(logger);
-			driver.quit();
+			
 		}
 
-
+        
 
 
 

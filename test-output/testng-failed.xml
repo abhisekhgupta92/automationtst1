@@ -6,7 +6,6 @@
       <class name="Testing.FunctionalTest">
         <methods>
           <include name="endreport"/>
-          <include name="AmazonTitleTest"/>
           <include name="selectProduct"/>
           <include name="OpenBrowser"/>
           <include name="teardown"/>

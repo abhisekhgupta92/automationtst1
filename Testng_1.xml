@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="API Regression" parallel="false" preserve-order="true" verbose="10">
+    <test name="APIPostCall">
+        <classes>
+            <class name="Testing.CreateRec_Post">
+                <methods>
+                    <include name="PostData01"/>
+                  
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
